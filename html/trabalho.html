@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="../img/Shoebenchrunning.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEGA PLAYLIST MUSIC!</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="../img/Destiny.jpg" alt="Logo Destiny" class="header-logo">
+        <h1 class="header-title">WEGA PLAYLIST MUSIC!</h1>
+    </header>
+
+    <main class="container">
+
+        <section class="carousel-section">
+            <h3 class="section-title">Destaques</h3>
+            <div class="carousel-wrapper">
+                <button id="carousel-prev" class="carousel-nav-btn" aria-label="Anterior">◀</button>
+                
+                <div class="carousel-viewport">
+                    <div id="carousel-track" class="carousel-track">
+                    </div>
+                </div>
+
+                <button id="carousel-next" class="carousel-nav-btn" aria-label="Próximo">▶</button>
+            </div>
+        </section>
+
+        <section id="now-playing-card" class="now-playing-card">
+            <div class="now-playing-thumb">
+                <img id="np-img" src="../img/Destiny.jpg" alt="Capa da música">
+            </div>
+            <div class="now-playing-info">
+                <h2 id="np-title">Seleciona uma música</h2>
+                <p id="np-artist">WEGA PLAYLIST MUSIC</p>
+                
+                <audio id="audio-player" src=""></audio>
+
+                <div class="progress-container">
+                    <span id="current-time">0:00</span>
+                    <input type="range" id="progress-bar" value="0" min="0" max="100">
+                    <span id="duration">0:00</span>
+                </div>
+
+                <div class="player-controls">
+                    <button id="btn-repeat" title="Repetir música" class="control-btn">🔁 Repetir</button>
+                    <button id="btn-prev" title="Anterior" class="control-btn">⏮️ Anterior</button>
+                    <button id="btn-play-pause" title="Pausar / Reproduzir" class="control-btn play-btn">▶️ Play</button>
+                    <button id="btn-next" title="Avançar" class="control-btn">⏭️ Avançar</button>
+                    <button id="btn-shuffle" title="Embaralhar" class="control-btn">🔀 Embaralhar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="playlist-section">
+            <h3 class="playlist-title">Lista de Faixas</h3>
+            <div id="playlist" class="playlist-container">
+            </div>
+        </section>
+
+    </main>
+
+    <script src="../js/codigo.js"></script>
+</body>
+</html>
